@@ -1,14 +1,16 @@
-window.AFRAME.registerComponent('handle-events', {
-    init: function () {
-        const el = this.el;
-        el.addEventListener('mouseenter', function () {
-            el.setAttribute('color', '#24CAFF');
-        });
-        el.addEventListener('mouseleave', function () {
-            el.setAttribute('color', '#EF2D5E');
-        });
-        el.addEventListener('click', function () {
-            el.setAttribute('scale', { x: 2, y: 1, z: 2 });
-        });
-    }
-});
+window.AFRAME.registerComponent('set-image', {
+    schema: {
+        on: { type: 'string' },
+        target: { type: 'string' },
+        src: { type: 'string' },
+        dur: { type: 'number', default: 300 },
+    },
+    init: function() {
+            const el = this.el;
+            const data = this.data;
+            el.addEventListener('click', function () {
+              const target = document.querySelector(data.target);
+              target.setAttribute('material','src',data.src);
+            });
+        }
+    });

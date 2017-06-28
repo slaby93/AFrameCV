@@ -9,7 +9,7 @@ class App extends React.PureComponent {
     super();
     this.handleStartClick = this.handleStartClick.bind(this);
     this.state = {
-      activateAFrame: false
+      activateAFrame: true
     };
   }
 

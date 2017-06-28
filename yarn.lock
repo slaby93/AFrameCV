@@ -58,6 +58,12 @@ address@1.0.1, address@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/address/-/address-1.0.1.tgz#363f5d3f2be26d0655d8afd5a9562e4fc2194537"
 
+aframe-template-component@^3.2.1:
+  version "3.2.1"
+  resolved "https://registry.yarnpkg.com/aframe-template-component/-/aframe-template-component-3.2.1.tgz#37a7daaf0e4447ec2868e2fdd3b91cb78533d25f"
+  dependencies:
+    es6-template-strings "^2.0.0"
+
 aframe@^0.5.0:
   version "0.5.0"
   resolved "https://registry.yarnpkg.com/aframe/-/aframe-0.5.0.tgz#c6335cad86ee7a731062415b718da79e764e96ef"
@@ -2084,7 +2090,7 @@ doctrine@^2.0.0:
     esutils "^2.0.2"
     isarray "^1.0.0"
 
-"document-register-element@github:dmarcos/document-register-element#8ccc532b7":
+document-register-element@dmarcos/document-register-element#8ccc532b7:
   version "0.5.4"
   resolved "https://codeload.github.com/dmarcos/document-register-element/tar.gz/8ccc532b7"
 
@@ -2285,7 +2291,7 @@ es-to-primitive@^1.1.1:
     is-date-object "^1.0.1"
     is-symbol "^1.0.1"
 
-es5-ext@^0.10.14, es5-ext@^0.10.9, es5-ext@~0.10.14:
+es5-ext@^0.10.12, es5-ext@^0.10.14, es5-ext@^0.10.9, es5-ext@~0.10.14:
   version "0.10.23"
   resolved "https://registry.yarnpkg.com/es5-ext/-/es5-ext-0.10.23.tgz#7578b51be974207a5487821b56538c224e4e7b38"
   dependencies:
@@ -2331,6 +2337,13 @@ es6-symbol@3.1.1, es6-symbol@^3.1, es6-symbol@^3.1.1, es6-symbol@~3.1, es6-symbo
   dependencies:
     d "1"
     es5-ext "~0.10.14"
+
+es6-template-strings@^2.0.0:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/es6-template-strings/-/es6-template-strings-2.0.1.tgz#b166c6a62562f478bb7775f6ca96103a599b4b2c"
+  dependencies:
+    es5-ext "^0.10.12"
+    esniff "^1.1"
 
 es6-weak-map@^2.0.1:
   version "2.0.2"
@@ -2479,6 +2492,13 @@ eslint@3.19.0:
     table "^3.7.8"
     text-table "~0.2.0"
     user-home "^2.0.0"
+
+esniff@^1.1:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/esniff/-/esniff-1.1.0.tgz#c66849229f91464dede2e0d40201ed6abf65f2ac"
+  dependencies:
+    d "1"
+    es5-ext "^0.10.12"
 
 espree@^3.4.0:
   version "3.4.3"
@@ -7598,7 +7618,7 @@ websocket-extensions@>=0.1.1:
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/websocket-extensions/-/websocket-extensions-0.1.1.tgz#76899499c184b6ef754377c2dbb0cd6cb55d29e7"
 
-"webvr-polyfill@github:dmarcos/webvr-polyfill#a02a8089b":
+webvr-polyfill@dmarcos/webvr-polyfill#a02a8089b:
   version "0.9.25"
   resolved "https://codeload.github.com/dmarcos/webvr-polyfill/tar.gz/a02a8089b"
   dependencies:
